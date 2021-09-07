@@ -1,13 +1,17 @@
 
 .new-tweet {
   font-family: "Source Sans Pro', sans-serif";
+  
 
 }
 
 #tweet-text {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #c97900;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 
 }
+
  /* button and counter */
 .underLine {
   font-family: 'Bungee';
@@ -23,18 +27,12 @@
   border-bottom: solid black;
   padding-bottom: 10px;
   font-family: 'Source Sans Pro', sans-serif;
-  display: flex;
-  justify-content: space-between;
 }
 
 .tweetButton {
   background-color: #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   color: white;
   margin-top: 10px;
 
 }
-
-/* .counter {
-  font-family: 'Bungee';
-  
-}  */
