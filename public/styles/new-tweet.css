@@ -5,20 +5,36 @@
 }
 
 #tweet-text {
-  font-family: "Source Sans Pro', sans-serif";
+  font-family: 'Source Sans Pro', sans-serif;
 
 }
-
+ /* button and counter */
 .underLine {
   font-family: 'Bungee';
+
+  display: flex;
+  justify-content: space-between;
+
   
+}
+
+/* what are you humming about + entry field */
+.form-entry {
+  border-bottom: solid black;
+  padding-bottom: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tweetButton {
-  font-family: 'Bungee';
+  background-color: #4056A1;
+  color: white;
+  margin-top: 10px;
 
 }
-.counter {
+
+/* .counter {
   font-family: 'Bungee';
   
-}
+}  */
