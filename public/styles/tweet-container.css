@@ -1,0 +1,52 @@
+article.tweetBox {
+  background-color: blanchedalmond;
+  margin-top: 2em;
+  border: solid black;
+  padding: 1em;
+
+}
+
+article.tweetBox:hover {
+  box-shadow: 3px 3px 5px 6px #ccc; 
+}
+
+header.contentBox{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.midSection {
+  border-bottom: solid black;
+  margin-bottom: -20px;
+}
+
+footer.iconSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.h3 {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.fas {
+  color: blueviolet;
+}
+
+.fab {
+  color: blueviolet;
+}
+
+.fab:hover {
+  color: bisque;
+}
+.fas:hover {
+  color: bisque;
+ }

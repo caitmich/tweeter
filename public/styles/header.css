@@ -1,4 +1,4 @@
-header {
+header.main-header {
   height: 400px;
   width: 100%;
   margin-top: 120px;
@@ -19,3 +19,6 @@ header {
   font-weight: 600;
 }
 
+.image {
+  margin-bottom: -25px;
+}
