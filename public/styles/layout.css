@@ -15,7 +15,7 @@ html {
  */
 
 body {
-  background-color: #c97900;
+  background-color: wheat;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -28,7 +28,7 @@ body {
 
  main {
    width: 90%;
-   background-color: #c97900;
+   background-color: wheat;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   display: flex;
   flex-direction: column;
