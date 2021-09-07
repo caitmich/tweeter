@@ -10,9 +10,17 @@ article.tweetBox:hover {
   box-shadow: 3px 3px 5px 6px #ccc; 
 }
 
-header.contentBox{
+.contentBox{
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.contentBox > div {
+  display: flex;
+  align-items: center;
 }
 
 .icons {
@@ -31,9 +39,9 @@ footer.iconSection {
   justify-content: space-between;
 }
 
-header.h3 {
-  display: flex;
-  justify-self: flex-end;
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 .fas {
