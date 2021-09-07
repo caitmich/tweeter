@@ -1,0 +1,27 @@
+nav {
+  
+  height: 120px;
+  background-color: #4056A1;
+
+}
+
+.title {
+  font-family: 'Bungee';
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5em;
+}
+
+.fa-angle-double-down {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.direction {
+  color: white;
+  padding-right: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+}
