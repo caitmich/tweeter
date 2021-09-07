@@ -17,8 +17,6 @@ html {
 body {
   background-color: #c97900;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  /* color: #545149;
-  background-color: #f4f1ec; */
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -27,3 +25,13 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+   width: 90%;
+   background-color: #c97900;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: auto;
+ }
