@@ -9,17 +9,16 @@
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #c97900;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-
+  border: none;
+  width: 100%;
+  height: 1.5em;
 }
 
  /* button and counter */
 .underLine {
   font-family: 'Bungee';
-
   display: flex;
   justify-content: space-between;
-
-  
 }
 
 /* what are you humming about + entry field */
@@ -34,5 +33,4 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   color: white;
   margin-top: 10px;
-
 }
