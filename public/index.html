@@ -32,6 +32,9 @@
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <!-- timeago -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -67,75 +70,21 @@
   <main class="container">
 
     <section class="new-tweet">
-      <div class="form-entry">
+        <div class="form-entry">
         <!-- <h2>Compose Tweet</h2> -->
-        <form method="POST" action="/tweets">
+      <form method="POST" action="/tweets">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-      </div>
-      <div class='underLine'>
+        </div>
+        <div class='underLine'>
         <button class="tweetButton" ; type="submit">Tweet</button>
         <output class="counter" name="counter" for="tweet-text">140</output>
-      </div>
-
+        </div>
       </form>
     </section>
 
-    <article class="tweetBox">
-      <header class = 'contentBox'>
-
-        <div>
-          <i class="fas fa-user-ninja" style="color: black; font-size: 2em;" ></i>
-          <p>Name</p>
-        </div>
-
-        <p>@Handle</p>
-
-      </header>
-
-      <div class="midSection">
-        <p>Tweet Content</p>
-      </div>
-
-      <footer class="iconSection">
-        <p>date since created</p>
-        <div class="icons">
-          <i class="fab fa-font-awesome-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-        </div>
-      </footer>
-    </article>
-
-    <article class="tweetBox">
-      <header class = 'contentBox'>
-
-        <div>
-          <i class="fas fa-user-secret" style="color: black; font-size: 2em;" ></i>
-          <p>Name</p>
-        </div>
-
-        <p>@Handle</p>
-
-      </header>
-
-      <div class="midSection">
-        <p>Tweet Content</p>
-      </div>
-
-      <footer class="iconSection">
-        <p>date since created</p>
-        <div class="icons">
-          <i class="fab fa-font-awesome-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-        </div>
-      </footer>
-    </article>
-    
-    <section>
-
-
-    </section>
+<section id="tweets-container">
+  <!-- Where rendered tweets will be loaded -->
+</section>
 
   </main>
 </body>
