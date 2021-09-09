@@ -23,6 +23,19 @@ header.main-header {
 .image {
   margin-bottom: -25px;
 }
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.last {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin-left: 5px;
+  color: black;
+}
+
 
 /* hide tagline */
 .direction {

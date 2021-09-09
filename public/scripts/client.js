@@ -36,10 +36,10 @@ $(document).ready( function () {
    const $tweet = $(`<article class="tweetBox">
    <header class="contentBox">
    <div> 
-      <img src=${avatar}> </img>
+      <img src=${avatar}"> </img>
       <p> ${name} </p>
     </div>
-    <p> ${escape(handle)}</p>
+    <p style=" color: #4056A1; font-weight:600;"> ${escape(handle)}</p>
    </header>
    <div class="midSection">
    <p>${escape(words)}</p>

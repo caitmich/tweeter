@@ -12,6 +12,12 @@
   height: 1.5em;
 }
 
+::placeholder {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
  /* button and counter */
 .underLine {
   font-family: 'Bungee';
