@@ -36,22 +36,4 @@ body {
   margin: auto;
  }
 
- /* hide tagline */
- .direction {
-   display: none;
- }
-
- /* tablet styles */
-@media only screen and (min-width: 768px) {
-  
-
-
-}
-
-/* desktop styles */
-@media only screen and (min-width: 1024px) {
-  .direction {
-    display: -webkit-flex;
-  }
-  
-}
+ 
