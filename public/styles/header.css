@@ -5,8 +5,8 @@ header.main-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c97900;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  background-color: #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   
 }
 
@@ -30,20 +30,45 @@ header.main-header {
 }
 
 /* tablet styles */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 830px) {
+  main {
+    width: 66.7%;
+    float: right;
+    margin-top: 200px;
+    margin-left: 1vw;
+    margin-right: 3vw;
+  }
  
-
+  header.main-header {
+    width: 33.3%;
+    float: left;
+    display: flex;
+    margin-top: 200px;
+    margin-left: 3vw;
+    margin-right: 1vw;
+  }
+  body {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .direction {
+    display: flex;
+  }
 
 }
 
 /* desktop styles */
 @media only screen and (min-width: 1024px) {
- .direction {
-   display: -webkit-flex;
- }
-
  header.main-header {
-   width: 33.3%;
-   float: left;
- }
+ margin-left: 5vw;
+ margin-right: 3vw;
+}
+
+main {
+  margin-left: 3vw;
+}
+/* body {
+  display: flex;
+  flex-wrap: nowrap;
+} */
 }
