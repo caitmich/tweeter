@@ -60,11 +60,11 @@ $(document).ready( function () {
     event.preventDefault();
 
     if (($("#tweet-text").val().length) === 0) {
-         ($(".empty-tweet-alert").slideDown()).slideUp(5000);
+      return ($(".empty-tweet-alert").slideDown()).fadeOut(5000);
        
     }
     if (($("#tweet-text").val().length) > 140) {
-      ($(".tweet-too-long").show()).fadeOut(4000);
+      return ($(".tweet-too-long").show()).fadeOut(5000);
     }
 
     const $data = $("form").serialize();
@@ -72,8 +72,8 @@ $(document).ready( function () {
     console.log('data:', $data);
 
       $.post("/tweets", $data).then(() => {
-        console.log('running!');
         loadTweets();
+        $("#tweet-text").val("");
       });
 
     })
