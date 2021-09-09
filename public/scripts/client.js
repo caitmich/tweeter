@@ -1,3 +1,8 @@
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 $(document).ready( function () {
 
@@ -16,19 +21,20 @@ $(document).ready( function () {
    const words = tweetData.content.text;
    const timePassed = timeago.format(tweetData.created_at);
 
+
    const $tweet = $(`<article class="tweetBox">
    <header class="contentBox">
    <div> 
-      <i ${avatar}> </i>
+      <i${escape(avatar)}> </i>
       <p> ${name} </p>
     </div>
-    <p> ${handle}</p>
+    <p> ${escape(handle)}</p>
    </header>
    <div class="midSection">
-   <p>${words}</p>
+   <p>${escape(words)}</p>
  </div>
    <footer class="iconSection"> 
-   <p>${timePassed}</p>
+   <p>${escape(timePassed)}</p>
         <div class="icons">
           <i class="fab fa-font-awesome-flag"></i>
           <i class="fas fa-retweet"></i>
@@ -44,7 +50,15 @@ $(document).ready( function () {
   $("form").on('submit', (event) => {
     event.preventDefault();
 
+    if (($("#tweet-text").val().length) === 0) {
+        alert("Your tweet is empty!")
+    }
+    if (($("#tweet-text").val().length) > 140) {
+        alert("Your tweet is too long!")
+    }
+
     const $data = $("form").serialize();
+
     console.log('data:', $data);
 
       $.ajax({
