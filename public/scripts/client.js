@@ -1,3 +1,4 @@
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -6,11 +7,19 @@ const escape = function (str) {
 
 $(document).ready( function () {
 
+  const loadTweets = function() {
+    $.ajax('/tweets', { method: 'GET' })
+    .then(function (data) {
+      console.log('Success');
+      renderTweets(data);
+    });
+  };
+
   const renderTweets = function(tweets) {
     for (dataObj of tweets) {
       // loops through tweets
       const $tweetSection = createTweetElement(dataObj);
-      $('#tweets-container').append($tweetSection);
+      $('#tweets-container').prepend($tweetSection);
     }
   }
 
@@ -25,7 +34,7 @@ $(document).ready( function () {
    const $tweet = $(`<article class="tweetBox">
    <header class="contentBox">
    <div> 
-      <i${escape(avatar)}> </i>
+      <img src=${avatar}> </img>
       <p> ${name} </p>
     </div>
     <p> ${escape(handle)}</p>
@@ -51,7 +60,7 @@ $(document).ready( function () {
     event.preventDefault();
 
     if (($("#tweet-text").val().length) === 0) {
-        alert("Your tweet is empty!")
+       $ (".empty-tweet-alert").style.display = "block"
     }
     if (($("#tweet-text").val().length) > 140) {
         alert("Your tweet is too long!")
@@ -61,23 +70,14 @@ $(document).ready( function () {
 
     console.log('data:', $data);
 
-      $.ajax({
-        method: "POST",
-        url: "/tweets",
-        data: $data,
-        dataType: 'JSON',
+      $.post("/tweets", $data).then(() => {
+        console.log('running!');
+        loadTweets();
       });
 
     })
 
-      const loadTweets = function() {
-          $.ajax('/tweets', { method: 'GET' })
-          .then(function (data) {
-            console.log('Success');
-            renderTweets(data);
-          });
-        };
-
+  
     loadTweets();
     
   })
