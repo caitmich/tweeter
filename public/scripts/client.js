@@ -60,10 +60,11 @@ $(document).ready( function () {
     event.preventDefault();
 
     if (($("#tweet-text").val().length) === 0) {
-       $ (".empty-tweet-alert").style.display = "block"
+         ($(".empty-tweet-alert").slideDown()).slideUp(5000);
+       
     }
     if (($("#tweet-text").val().length) > 140) {
-        alert("Your tweet is too long!")
+      ($(".tweet-too-long").show()).fadeOut(4000);
     }
 
     const $data = $("form").serialize();

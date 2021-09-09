@@ -70,19 +70,17 @@
   <main class="container">
 
     <section class="new-tweet">
-      <script>
-        display: none;
-      <span class="empty-tweet-alert">
-        Your tweet is empty!
-      </span>
-    </script>
-
-    <script>
-        display: none;
+      
+      <span class="empty-tweet-alert"><script>
+        $(".empty-tweet-alert").hide()
+        </script>Your tweet is empty!</span>
+    
       <span class="tweet-too-long">
-        Your tweet is too long!
+        <script>
+          $(".tweet-too-long").hide()
+          </script>Your tweet is too long!
       </span>
-    </script>
+   
 
         <div class="form-entry">
         <!-- <h2>Compose Tweet</h2> -->
