@@ -1,5 +1,5 @@
 article.tweetBox {
-  background-color: blanchedalmond;
+  background-color: #edecee;
   margin-top: 2em;
   border: solid black;
   padding: 1em;
@@ -45,19 +45,16 @@ p {
   padding-left: 5px;
 }
 
-.fas {
+.handle {
+  color: #4056A1; 
+  font-weight:600;
+}
+
+.fas, .fab {
   color: #4056A1;
   padding: 3px;
 }
 
-.fab {
-  color: #4056A1;
-  padding: 3px;
-}
-
-.fab:hover {
+.fab:hover, .fas:hover {
   color: #9af9e2;
 }
-.fas:hover {
-  color: #9af9e2;
- }

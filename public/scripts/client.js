@@ -39,7 +39,7 @@ $(document).ready( function () {
       <img src=${avatar}"> </img>
       <p> ${name} </p>
     </div>
-    <p style=" color: #4056A1; font-weight:600;"> ${escape(handle)}</p>
+    <p class="handle"> ${escape(handle)}</p>
    </header>
    <div class="midSection">
    <p>${escape(words)}</p>
