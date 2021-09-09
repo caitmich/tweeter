@@ -16,6 +16,8 @@ $(document).ready( function () {
   };
 
   const renderTweets = function(tweets) {
+    // empty container before rendering tweets so you have no doubles
+    $("#tweets-container").empty();
     for (dataObj of tweets) {
       // loops through tweets
       const $tweetSection = createTweetElement(dataObj);
