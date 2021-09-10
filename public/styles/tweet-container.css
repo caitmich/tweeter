@@ -29,6 +29,7 @@ article.tweetBox:hover {
 .midSection {
   border-bottom: solid black;
   margin-bottom: -20px;
+  overflow-wrap: break-word;
 }
 
 footer.iconSection {
