@@ -16,6 +16,7 @@ header.main-header {
   background-color: $mainColor;
   background-image: $backgroundImage;
   @include vertAlign;
+ 
 }
 
 .avatar {

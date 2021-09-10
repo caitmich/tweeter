@@ -42,8 +42,8 @@ $(document).ready( function () {
     <p class="handle"> ${escape(handle)}</p>
    </header>
    <div class="midSection">
-   <p>${escape(words)}</p>
- </div>
+    <p>${escape(words)}</p>
+  </div>
    <footer class="iconSection"> 
    <p>${escape(timePassed)}</p>
         <div class="icons">
@@ -71,9 +71,11 @@ $(document).ready( function () {
 
     const $data = $("form").serialize();
 
-    console.log('data:', $data);
+    // console.log('data:', $data);
 
       $.post("/tweets", $data).then(() => {
+        $('.counter').val(140);
+
         loadTweets();
         $("#tweet-text").val("");
       });
