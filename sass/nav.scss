@@ -1,0 +1,65 @@
+$mainColor: #4056A1;
+$backgroundImage: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+$pinkColor: #c49af9;
+
+nav { 
+  height: 120px;
+  background-color: $mainColor;
+  background-image: $backgroundImage;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+
+  .title {
+    color: #ffff;
+    font-size: 1.5em;
+  }
+
+  .logo {
+    font-family: 'Bungee';
+    padding-left: 1.5em;
+  
+  }
+
+  .arrow {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+  }
+
+  .direction {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    padding-right: 1.5em;
+  }
+}
+
+
+.fas {
+  color: red;
+  font-size: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* desktop styles */
+@media only screen and (min-width: 830px) {
+  nav {
+    background-image: $backgroundImage;
+    background-color: $pinkColor;
+   }
+   .logo {
+     color:$mainColor;
+   }
+  
+}

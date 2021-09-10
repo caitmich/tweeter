@@ -3,18 +3,21 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+//sass variables
+ $backgroundImageBody: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
 body {
   background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  font-family: "Source Sans Pro", sans-serif;
+  background-image: $backgroundImageBody;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -22,12 +25,13 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-main {
-  width: 90%;
-  background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
+ main {
+   width: 90%;
+   background-color: white;
+  background-image: $backgroundImageBody;
   display: flex;
   flex-direction: column;
   padding: 1em;
   margin: auto;
-}
+ }

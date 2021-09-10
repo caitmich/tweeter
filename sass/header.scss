@@ -1,28 +1,34 @@
+$mainColor: #4056A1;
+$backgroundImage: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+$fontStack: 'Source Sans Pro', sans-serif;
+
+@mixin vertAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 header.main-header {
   height: 400px;
   width: 100%;
   margin-top: 120px;
-  background-color: #4056A1;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: $mainColor;
+  background-image: $backgroundImage;
+  @include vertAlign;
 }
 
 .avatar {
-  flex-direction: column;
+  flex-direction: column; 
   align-content: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $fontStack;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include vertAlign;
 }
 
 .image {
   margin-bottom: -25px;
 }
-
 .name {
   display: flex;
   flex-direction: row;
@@ -30,11 +36,12 @@ header.main-header {
 }
 
 .last {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $fontStack;
   font-weight: 300;
   margin-left: 5px;
   color: black;
 }
+
 
 /* hide tagline */
 .direction {
@@ -50,7 +57,7 @@ header.main-header {
     margin-left: 1vw;
     margin-right: 3vw;
   }
-
+ 
   header.main-header {
     width: 33.3%;
     float: left;
@@ -59,24 +66,24 @@ header.main-header {
     margin-left: 3vw;
     margin-right: 1vw;
   }
-
   body {
     display: flex;
     flex-wrap: nowrap;
   }
-
   .direction {
     display: flex;
   }
+
 }
+
 /* desktop styles */
 @media only screen and (min-width: 1024px) {
-  header.main-header {
-    margin-left: 5vw;
-    margin-right: 3vw;
-  }
+ header.main-header {
+ margin-left: 5vw;
+ margin-right: 3vw;
+}
 
-  main {
-    margin-left: 3vw;
-  }
+main {
+  margin-left: 3vw;
+}
 }

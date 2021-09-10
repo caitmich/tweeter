@@ -1,6 +1,4 @@
-
-/* nav elements */
-nav { 
+nav {
   height: 120px;
   background-color: #4056A1;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
@@ -14,32 +12,26 @@ nav {
   left: 0;
   right: 0;
 }
-
-.title {
+nav .title {
   color: #ffff;
   font-size: 1.5em;
 }
-
-.logo {
-  font-family: 'Bungee';
+nav .logo {
+  font-family: "Bungee";
   padding-left: 1.5em;
-
 }
-
-.direction {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  padding-right: 1.5em;
-}
-
-.arrow {
+nav .arrow {
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  
+}
+nav .direction {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  padding-right: 1.5em;
 }
 
 .fas {
@@ -54,9 +46,9 @@ nav {
   nav {
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
     background-color: #c49af9;
-   }
-   .logo {
-     color:#4056A1;
-   }
-  
+  }
+
+  .logo {
+    color: #4056A1;
+  }
 }

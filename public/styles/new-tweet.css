@@ -1,10 +1,9 @@
-
 .new-tweet {
-  font-family: "Source Sans Pro', sans-serif";
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #tweet-text {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   background-color: white;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   border: none;
@@ -14,13 +13,13 @@
 
 ::placeholder {
   color: black;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
- /* button and counter */
+/* button and counter */
 .underLine {
-  font-family: 'Bungee';
+  font-family: "Bungee";
   display: flex;
   justify-content: space-between;
 }
@@ -29,7 +28,7 @@
 .form-entry {
   border-bottom: solid black;
   padding-bottom: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .tweetButton {
@@ -40,13 +39,12 @@
 }
 
 .tweetButton:hover {
-  box-shadow: 6px 6px 5px  #ccc; 
+  box-shadow: 6px 6px 5px #ccc;
 }
 
 .empty-tweet-alert, .tweet-too-long {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   border: solid red;
   padding: 5px;
-
 }
