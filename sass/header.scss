@@ -1,3 +1,4 @@
+//sass variables
 $mainColor: #4056A1;
 $backgroundImage: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 $fontStack: 'Source Sans Pro', sans-serif;
@@ -30,6 +31,7 @@ header.main-header {
 .image {
   margin-bottom: -25px;
 }
+
 .name {
   display: flex;
   flex-direction: row;
@@ -80,8 +82,8 @@ header.main-header {
 /* desktop styles */
 @media only screen and (min-width: 1024px) {
  header.main-header {
- margin-left: 5vw;
- margin-right: 3vw;
+  margin-left: 5vw;
+  margin-right: 3vw;
 }
 
 main {
